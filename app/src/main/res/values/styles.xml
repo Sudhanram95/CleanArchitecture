@@ -1,0 +1,35 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <!--<item name="android:statusBarColor">#000000</item>-->
+    </style>
+
+    <style name="TextStyle" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="SmallTextBold" parent="TextStyle">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">15dp</item>
+    </style>
+
+    <style name="SmallText" parent="TextStyle">
+        <item name="android:textSize">15dp</item>
+    </style>
+
+    <style name="BigTextBold" parent="TextStyle">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">20dp</item>
+    </style>
+
+    <style name="BigText" parent="TextStyle">
+        <item name="android:textSize">20dp</item>
+    </style>
+
+</resources>
