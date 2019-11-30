@@ -8,10 +8,12 @@ import com.example.cleanarchitecturetryout.R
 import com.example.cleanarchitecturetryout.data.network.Resource
 import com.example.cleanarchitecturetryout.domain.ecommerce.CategoryListModel
 import com.example.cleanarchitecturetryout.framework.di.viewmodel.ViewModelFactory
+import com.example.cleanarchitecturetryout.ui.ecommerce.cart.view.CartFragment
 import com.example.cleanarchitecturetryout.ui.ecommerce.categorylist.view.CategoryListFragment
 import com.example.cleanarchitecturetryout.ui.ecommerce.viewmodel.EcommerceViewModel
 import dagger.android.support.DaggerAppCompatActivity
 import dagger.android.support.DaggerFragment
+import kotlinx.android.synthetic.main.activity_ecommerce.*
 import javax.inject.Inject
 
 class EcommerceActivity : DaggerAppCompatActivity() {
@@ -26,6 +28,10 @@ class EcommerceActivity : DaggerAppCompatActivity() {
         ecommerceViewModel = ViewModelProviders.of(this, viewModelFactory).get(EcommerceViewModel::class.java)
         ecommerceViewModel.getAllProductsResponse()
         observeViewModel()
+
+        ll_cart.setOnClickListener {
+            replaceFragment(CartFragment(), null)
+        }
     }
 
     fun observeViewModel() {
@@ -45,8 +51,8 @@ class EcommerceActivity : DaggerAppCompatActivity() {
         })
     }
 
-    fun replaceFragment(fragment: DaggerFragment, bundle: Bundle) {
-        fragment.arguments = bundle
+    fun replaceFragment(fragment: DaggerFragment, bundle: Bundle?) {
+        bundle?.let { fragment.arguments = it }
         supportFragmentManager.beginTransaction()
             .replace(R.id.frame_container, fragment, fragment.javaClass.name)
             .addToBackStack(null)
@@ -57,6 +63,7 @@ class EcommerceActivity : DaggerAppCompatActivity() {
         fragment.arguments = bundle
         supportFragmentManager.beginTransaction()
             .add(R.id.frame_container, fragment, fragment.javaClass.name)
+            .addToBackStack(null)
             .commit()
     }
 

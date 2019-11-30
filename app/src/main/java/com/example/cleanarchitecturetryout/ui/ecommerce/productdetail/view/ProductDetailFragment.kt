@@ -5,12 +5,14 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.cleanarchitecturetryout.R
 import com.example.cleanarchitecturetryout.data.network.Resource
+import com.example.cleanarchitecturetryout.databinding.FragmentProductDetailBinding
 import com.example.cleanarchitecturetryout.domain.ecommerce.ProductDetailModel
 import com.example.cleanarchitecturetryout.framework.di.viewmodel.ViewModelFactory
 import com.example.cleanarchitecturetryout.ui.ItemClickListener
@@ -25,7 +27,7 @@ class ProductDetailFragment: DaggerFragment(), ItemClickListener {
     @Inject lateinit var viewModelFactory: ViewModelFactory
     lateinit var productDetailViewModel: ProductDetailViewModel
     lateinit var productDetailModel: ProductDetailModel
-    lateinit var rootView: View
+    lateinit var productDetailBinding: FragmentProductDetailBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -37,22 +39,20 @@ class ProductDetailFragment: DaggerFragment(), ItemClickListener {
     }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        rootView = inflater.inflate(R.layout.fragment_product_detail, container, false)
-        initializeView(rootView)
-        return rootView
+        productDetailBinding = DataBindingUtil.inflate(inflater, R.layout.fragment_product_detail, container, false)
+        initializeView()
+        return productDetailBinding.root
     }
 
-    private fun initializeView(view: View) {
-        view.txtProductName.text = productDetailModel.name
-        view.txtDescription.text = productDetailModel.description
-        view.txtPrice.text = "Rs. ${productDetailModel.price}"
+    private fun initializeView() {
+        productDetailBinding.product = productDetailModel
         loadImage(productDetailModel.imageList.get(0))
 
         val thumbnailAdapter = ProductThumbnailAdapter(this, productDetailModel.imageList)
-        view.rv_product_thumbnail.layoutManager = LinearLayoutManager(context, RecyclerView.HORIZONTAL, false)
-        view.rv_product_thumbnail.adapter = thumbnailAdapter
+        productDetailBinding.rvProductThumbnail.layoutManager = LinearLayoutManager(context, RecyclerView.HORIZONTAL, false)
+        productDetailBinding.rvProductThumbnail.adapter = thumbnailAdapter
 
-        view.btnAddCart.setOnClickListener { productDetailViewModel.addProductToCart(productDetailModel) }
+        productDetailBinding.btnAddCart.setOnClickListener { productDetailViewModel.addProductToCart(productDetailModel) }
     }
 
     private fun observeViewModel() {
@@ -71,6 +71,6 @@ class ProductDetailFragment: DaggerFragment(), ItemClickListener {
         Picasso.get().load(url)
             .centerCrop()
             .fit()
-            .into(rootView.imgProductPreview)
+            .into(productDetailBinding.imgProductPreview)
     }
 }

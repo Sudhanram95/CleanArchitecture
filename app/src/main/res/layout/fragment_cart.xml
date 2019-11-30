@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <import type="android.view.View"/>
+
+        <variable name="cart" 
+                  type="com.example.cleanarchitecturetryout.domain.cart.CartModel"/>
+        
+        <variable name="cartEmpty"
+                  type="String"/>
+
+        <variable name="total"
+                  type="String"/>
+    </data>
+
+    <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/fragment_bg">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    android:id="@+id/ll_cart"
+                    android:visibility="@{cartEmpty==null ? View.VISIBLE : View.GONE}"
+                    android:orientation="vertical">
+
+                <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/rv_cart_list"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Grand Total"
+                            style="@style/BigTextBold"/>
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:id="@+id/txt_grand_total"
+                            android:text="@{total}"
+                            android:textColor="@color/button_bg"
+                            style="@style/BigTextBold"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:id="@+id/txt_emptyy_cart"
+                    android:gravity="center"
+                    android:text="@{cartEmpty}"
+                    android:visibility="@{cartEmpty==null ? View.GONE : View.VISIBLE}"
+                    style="@style/BigTextBold"/>
+        </LinearLayout>
+
+    </ScrollView>
+</layout>

@@ -12,4 +12,6 @@ class CategoryDetailModel : Serializable {
     lateinit var categoryImage: String
     @SerializedName("item_list")
     lateinit var itemList: List<ProductDetailModel>
+
+    var isLeft = false
 }

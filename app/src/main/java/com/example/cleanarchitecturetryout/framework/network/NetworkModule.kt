@@ -34,11 +34,11 @@ class NetworkModule {
     @Singleton
     @Provides
     fun provideOkHttpClient(interceptor: HttpLoggingInterceptor): OkHttpClient {
-        val TIMEOUT: Long = 60
+        val timeout: Long = 60
         val httpClient = OkHttpClient().newBuilder()
-            .connectTimeout(TIMEOUT, TimeUnit.SECONDS)
-            .readTimeout(TIMEOUT, TimeUnit.SECONDS)
-            .writeTimeout(TIMEOUT, TimeUnit.SECONDS)
+            .connectTimeout(timeout, TimeUnit.SECONDS)
+            .readTimeout(timeout, TimeUnit.SECONDS)
+            .writeTimeout(timeout, TimeUnit.SECONDS)
         httpClient.addInterceptor(interceptor)
 
         return httpClient.build()

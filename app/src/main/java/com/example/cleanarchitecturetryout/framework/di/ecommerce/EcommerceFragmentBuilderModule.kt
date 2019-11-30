@@ -1,9 +1,13 @@
 package com.example.cleanarchitecturetryout.framework.di.ecommerce
 
+import com.example.cleanarchitecturetryout.framework.di.cart.CartModule
+import com.example.cleanarchitecturetryout.framework.di.cart.CartScope
+import com.example.cleanarchitecturetryout.framework.di.cart.CartViewModelModule
 import com.example.cleanarchitecturetryout.framework.di.categorylist.CategoryListScope
 import com.example.cleanarchitecturetryout.framework.di.productdetail.ProductDetailModule
 import com.example.cleanarchitecturetryout.framework.di.productdetail.ProductDetailScope
 import com.example.cleanarchitecturetryout.framework.di.productdetail.ProductDetailViewModelModule
+import com.example.cleanarchitecturetryout.ui.ecommerce.cart.view.CartFragment
 import com.example.cleanarchitecturetryout.ui.ecommerce.categorylist.view.CategoryListFragment
 import com.example.cleanarchitecturetryout.ui.ecommerce.productdetail.view.ProductDetailFragment
 import com.example.cleanarchitecturetryout.ui.ecommerce.productlist.view.ProductListFragment
@@ -23,4 +27,8 @@ abstract class EcommerceFragmentBuilderModule {
     @ProductDetailScope
     @ContributesAndroidInjector(modules = [ProductDetailModule::class, ProductDetailViewModelModule::class])
     abstract fun contributeProductDetailFragment(): ProductDetailFragment
+
+    @CartScope
+    @ContributesAndroidInjector(modules = [CartModule::class, CartViewModelModule::class])
+    abstract fun contributeCartFragment(): CartFragment
 }
