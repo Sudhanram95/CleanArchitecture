@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+        xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable name="cart"
+                  type="com.example.cleanarchitecturetryout.domain.cart.CartModel"/>
+    </data>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_marginTop="5dp"
+            android:padding="10dp"
+            android:layout_height="120dp">
+
+        <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/img_item"/>
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_alignTop="@id/img_item"
+                android:layout_marginTop="10dp"
+                android:id="@+id/ll_sub_total"
+                android:layout_alignParentRight="true">
+
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@drawable/rounded_corner">
+
+                <TextView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:id="@+id/txt_minus"
+                        android:text="-"
+                        android:gravity="center"
+                        style="@style/SmallTextBold"
+                        android:textColor="@color/button_bg"/>
+
+                <TextView
+                        android:layout_width="30dp"
+                        android:layout_height="20dp"
+                        android:background="@color/button_bg"
+                        android:text="@{String.valueOf(cart.quantity)}"
+                        android:id="@+id/txt_quantity"
+                        android:gravity="center"
+                        style="@style/SmallTextBold"
+                        android:textColor="@color/white"/>
+
+                <TextView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:id="@+id/txt_plus"
+                        android:text="+"
+                        android:gravity="center"
+                        style="@style/SmallTextBold"
+                        android:textColor="@color/button_bg"/>
+
+            </LinearLayout>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_sub_total"
+                    android:text="@{`Rs.` + cart.subTotal}"
+                    android:layout_gravity="end"
+                    style="@style/SmallTextBold"
+                    android:layout_marginTop="5dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/img_item"
+                android:layout_toLeftOf="@id/ll_sub_total"
+                android:padding="10dp"
+                android:orientation="vertical">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_product_name"
+                    android:text="@{cart.productName}"
+                    style="@style/SmallTextBold"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_item_price"
+                    android:text="@{`Rs.` + cart.itemPrice}"
+                    style="@style/SmallText"
+                    android:layout_marginTop="5dp"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+</layout>

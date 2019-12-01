@@ -153,3 +153,13 @@ x
 Happ/src/test/java/com/example/cleanarchitecturetryout/ExampleUnitTest.kt,a/6/a67b1d67a215f67429b5984301d14498123d0797
 ˆ
 Xapp/src/main/java/com/example/cleanarchitecturetryout/framework/network/NetworkModule.kt,d/0/d0f33701d631a8c1eb25e49a874c6e04bd09ada6
+†
+Vapp/src/main/java/com/example/cleanarchitecturetryout/framework/di/cart/CartScope.java,9/9/99d99f85853fa86c61483d7e57b72e4df24f4ba4
+Ž
+^app/src/main/java/com/example/cleanarchitecturetryout/framework/di/cart/CartViewModelModule.kt,4/8/4844f8e7f08fb087c7b0f33b124b3d4920a2743d
+’
+bapp/src/main/java/com/example/cleanarchitecturetryout/ui/ecommerce/cart/viewmodel/CartViewModel.kt,f/f/ffb5da76c18729c49700ed311fcd0a0747b8831f
+…
+Uapp/src/main/java/com/example/cleanarchitecturetryout/framework/di/cart/CartModule.kt,d/b/db84808df097da33bc499505dea8095c608dbe40
+Œ
+\app/src/main/java/com/example/cleanarchitecturetryout/ui/ecommerce/cart/view/CartFragment.kt,9/e/9e271292abfb755fea8fc75196ea7f73b0c8e360
