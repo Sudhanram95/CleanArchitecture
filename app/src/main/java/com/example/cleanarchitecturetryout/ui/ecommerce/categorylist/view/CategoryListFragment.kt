@@ -60,7 +60,7 @@ class CategoryListFragment: DaggerFragment(), ItemClickListener {
 
     override fun onItemClick(model: Any) {
         val bundle = Bundle()
-        bundle.putSerializable("selectedId", (model as CategoryDetailModel).categoryId)
+        bundle.putString("selectedId", (model as CategoryDetailModel).categoryId)
         (context as EcommerceActivity).replaceFragment(ProductListFragment(), bundle)
     }
 }
