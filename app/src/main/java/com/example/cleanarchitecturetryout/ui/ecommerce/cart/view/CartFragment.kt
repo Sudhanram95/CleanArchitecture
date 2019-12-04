@@ -50,7 +50,7 @@ class CartFragment: DaggerFragment() {
                     Resource.Status.SUCCESS -> {
                         Log.e("CartFragment", "List: ${Gson().toJson(resource.data)}")
                         cartAdapter = CartAdapter(cartViewModel, resource.data!!.toMutableList())
-                        cartBinding.rvCartList.layoutManager = LinearLayoutManager(context, RecyclerView.HORIZONTAL, false)
+                        cartBinding.rvCartList.layoutManager = LinearLayoutManager(context, RecyclerView.VERTICAL, false)
                         cartBinding.rvCartList.adapter = cartAdapter
                     }
 
