@@ -1,9 +1,7 @@
 package com.example.cleanarchitecturetryout.framework.di.application
 
 import com.example.cleanarchitecturetryout.framework.di.ecommerce.EcommerceFragmentBuilderModule
-import com.example.cleanarchitecturetryout.framework.di.ecommerce.EcommerceModule
 import com.example.cleanarchitecturetryout.framework.di.ecommerce.EcommerceScope
-import com.example.cleanarchitecturetryout.framework.di.ecommerce.EcommerceViewModelModule
 import com.example.cleanarchitecturetryout.framework.di.main.MainModule
 import com.example.cleanarchitecturetryout.framework.di.main.MainScope
 import com.example.cleanarchitecturetryout.framework.di.main.MainViewModelModule
@@ -20,6 +18,6 @@ abstract class ActivityBuilderModule {
     abstract fun contributeMainActivity(): MainActivity
 
     @EcommerceScope
-    @ContributesAndroidInjector(modules = [EcommerceFragmentBuilderModule::class, EcommerceModule::class, EcommerceViewModelModule::class])
+    @ContributesAndroidInjector(modules = [EcommerceFragmentBuilderModule::class])
     abstract fun contributeEcommerceActivity(): EcommerceActivity
 }

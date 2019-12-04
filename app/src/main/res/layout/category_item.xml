@@ -5,7 +5,7 @@
     <data>
         <import type="android.view.View"/>
         <variable name="category"
-                  type="com.example.cleanarchitecturetryout.domain.ecommerce.CategoryDetailModel"/>
+                  type="com.example.cleanarchitecturetryout.domain.categorylist.CategoryDetailModel"/>
     </data>
 
     <androidx.cardview.widget.CardView
@@ -42,13 +42,13 @@
                         android:text="@{category.categoryName}"
                         android:id="@+id/txt_left_category_name"/>
 
-                <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textColor="@color/white"
-                        style="@style/SmallText"
-                        android:text="@{category.itemList.size() + `Products`}"
-                        android:id="@+id/txt_left_item_count"/>
+<!--                <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:textColor="@color/white"-->
+<!--                        style="@style/SmallText"-->
+<!--                        android:text="@{category.itemList.size() + `Products`}"-->
+<!--                        android:id="@+id/txt_left_item_count"/>-->
             </LinearLayout>
 
             <LinearLayout
@@ -69,13 +69,13 @@
                         android:text="@{category.categoryName}"
                         android:id="@+id/txt_right_category_name"/>
 
-                <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textColor="@color/white"
-                        android:text="@{category.itemList.size() + `Products`}"
-                        style="@style/SmallText"
-                        android:id="@+id/txt_right_item_count"/>
+<!--                <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:textColor="@color/white"-->
+<!--                        android:text="@{category.itemList.size() + `Products`}"-->
+<!--                        style="@style/SmallText"-->
+<!--                        android:id="@+id/txt_right_item_count"/>-->
             </LinearLayout>
 
         </RelativeLayout>

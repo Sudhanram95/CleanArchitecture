@@ -7,7 +7,7 @@ import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.example.cleanarchitecturetryout.R
 import com.example.cleanarchitecturetryout.databinding.ProductItemBinding
-import com.example.cleanarchitecturetryout.domain.ecommerce.ProductDetailModel
+import com.example.cleanarchitecturetryout.domain.product.ProductDetailModel
 import com.example.cleanarchitecturetryout.ui.ItemClickListener
 import com.squareup.picasso.Picasso
 
@@ -36,7 +36,7 @@ class ProductAdapter(val itemClickListener: ItemClickListener, val productList: 
     override fun onBindViewHolder(holder:MyViewHolder, position: Int) {
         val productDetail = productList.get(position)
         Picasso.get()
-            .load(productDetail.imageList.get(0))
+            .load(productDetail.images.get(0))
             .centerCrop()
             .fit()
             .into(itemBinding.imgProduct)

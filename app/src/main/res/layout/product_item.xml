@@ -4,7 +4,7 @@
         xmlns:app="http://schemas.android.com/apk/res-auto">
     <data>
         <variable name="product"
-                  type="com.example.cleanarchitecturetryout.domain.ecommerce.ProductDetailModel"/>
+                  type="com.example.cleanarchitecturetryout.domain.product.ProductDetailModel"/>
     </data>
 
     <androidx.cardview.widget.CardView

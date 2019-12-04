@@ -13,7 +13,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.cleanarchitecturetryout.R
 import com.example.cleanarchitecturetryout.data.network.Resource
 import com.example.cleanarchitecturetryout.databinding.FragmentProductDetailBinding
-import com.example.cleanarchitecturetryout.domain.ecommerce.ProductDetailModel
+import com.example.cleanarchitecturetryout.domain.product.ProductDetailModel
 import com.example.cleanarchitecturetryout.framework.di.viewmodel.ViewModelFactory
 import com.example.cleanarchitecturetryout.ui.ItemClickListener
 import com.example.cleanarchitecturetryout.ui.ecommerce.productdetail.viewmodel.ProductDetailViewModel
@@ -46,9 +46,9 @@ class ProductDetailFragment: DaggerFragment(), ItemClickListener {
 
     private fun initializeView() {
         productDetailBinding.product = productDetailModel
-        loadImage(productDetailModel.imageList.get(0))
+        loadImage(productDetailModel.images.get(0))
 
-        val thumbnailAdapter = ProductThumbnailAdapter(this, productDetailModel.imageList)
+        val thumbnailAdapter = ProductThumbnailAdapter(this, productDetailModel.images)
         productDetailBinding.rvProductThumbnail.layoutManager = LinearLayoutManager(context, RecyclerView.HORIZONTAL, false)
         productDetailBinding.rvProductThumbnail.adapter = thumbnailAdapter
 

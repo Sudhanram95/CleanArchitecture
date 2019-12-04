@@ -4,7 +4,7 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.example.cleanarchitecturetryout.data.network.Resource
 import com.example.cleanarchitecturetryout.domain.cart.CartModel
-import com.example.cleanarchitecturetryout.domain.ecommerce.ProductDetailModel
+import com.example.cleanarchitecturetryout.domain.product.ProductDetailModel
 import com.example.cleanarchitecturetryout.interactor.cart.AddToCart
 import javax.inject.Inject
 
@@ -15,7 +15,7 @@ class ProductDetailViewModel @Inject constructor(val addToCart: AddToCart): View
     fun observeAddToCart() = addToCartLiveData
 
     fun addProductToCart(product: ProductDetailModel) {
-        val result = addToCart(CartModel(product.itemId, product.name, product.imageList.get(0),
+        val result = addToCart(CartModel(product.productId, product.name, product.images.get(0),
             1, product.price, product.price))
 
         addToCartLiveData.value = if (result > 0)

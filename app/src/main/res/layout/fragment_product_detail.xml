@@ -5,7 +5,7 @@
 
     <data>
         <variable name="product"
-                  type="com.example.cleanarchitecturetryout.domain.ecommerce.ProductDetailModel"/>
+                  type="com.example.cleanarchitecturetryout.domain.product.ProductDetailModel"/>
     </data>
 
     <RelativeLayout android:layout_width="match_parent"

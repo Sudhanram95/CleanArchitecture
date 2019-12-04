@@ -1,0 +1,139 @@
+{
+  "products": {
+    "1" : [
+      {
+        "productId": 11,
+        "name": "Microwave Oven",
+        "images": [
+          "https://www.lg.com/in/images/microwave-ovens/md05265526/gallery/Mobile-768x507_0000057r.jpg",
+          "https://www.lg.com/in/images/microwave-ovens/md05265526/gallery/Large-940x620_0000062.jpg",
+          "https://www.lg.com/in/images/microwave-ovens/md05265526/gallery/Large-940x620_0000068.jpg"
+        ],
+        "description": "Cooks all. Cooks easily\nLG gives you the perfect reason to have your dream kitchen. With LG range of microwave oven, you can cook everything with just one touch. From stewing to roasting. Roasting to Baking. Browning to Pasteurizing. Barbecuing to Diet Frying. Diet Frying to Heating. Steaming to Grilling.This one does all.",
+        "price": 1500
+      },
+      {
+        "productId": 12,
+        "name": "Television",
+        "images": [
+          "https://cdn.pocket-lint.com/r/s/970x/assets/images/145346-tv-review-samsung-nu8000-tv-review-image2-0rsxowbt24.jpg",
+          "https://cdn.pocket-lint.com/r/s/970x/assets/images/145346-tv-review-samsung-nu8000-tv-review-image3-dmpzw1luy6.jpg",
+          "https://cdn.pocket-lint.com/r/s/970x/assets/images/145346-tv-review-samsung-nu8000-tv-review-image1-f0ztcqv473.jpg"
+        ],
+        "description": "The look is attractive, with a minimalist appearance that retains a contemporary feel. There's a thin black bezel around the screen, and a dark silver strip with a brushed metal effect running along the bottom.",
+        "price": 35000
+      },
+      {
+        "productId": 13,
+        "name": "Vacuum Cleaner",
+        "images": [
+          "https://ii1.pepperfry.com/media/catalog/product/k/a/494x544/karcher-plastic---stainless-steel-1300-watt-wet---dry-vacuum-cleaner-karcher-plastic---stainless-ste-ktoeco.jpg",
+          "https://ii3.pepperfry.com/media/catalog/product/k/a/494x544/karcher-plastic---stainless-steel-1300-watt-wet---dry-vacuum-cleaner-karcher-plastic---stainless-ste-d6vlwt.jpg"
+        ],
+        "description": "The high-end WD 6 P Premium multi-purpose vacuum cleaner impresses with its ultra-high suction power, with a power consumption of only 1,300 watts. The vacuum cleaner is equipped with the innovative filter removal technology and also with the flat pleated filter contained in a removable box in the device head. By folding out this box, the filter can be removed in seconds without any contact with dirt. Dry and wet dirt can be vacuumed without the need for filter replacement.",
+        "price": 7000
+      }
+    ],
+    "2" : [
+      {
+        "productId": 21,
+        "name": "Table",
+        "images": [
+          "https://ii1.pepperfry.com/media/catalog/product/s/t/494x544/stanfield-solid-wood-study-table-in-provincial-teak-finish-by-amberville-stanfield-solid-wood-study--9kmvw5.jpg",
+          "https://ii3.pepperfry.com/media/catalog/product/s/t/494x544/stanfield-solid-wood-study-table-in-provincial-teak-finish-by-amberville-stanfield-solid-wood-study--litmlv.jpg",
+          "https://ii2.pepperfry.com/media/catalog/product/s/t/494x544/stanfield-solid-wood-study-table-in-provincial-teak-finish-by-amberville-stanfield-solid-wood-study--mah8nf.jpg"
+        ],
+        "description": "Colonial Style Furniture is graceful and refined, often characterized by the use of turnings, curved legs and motifs to present an elegant appearance. Colonial Style Furniture on Pepperfry sees Indian craftsmen interpreting European period styles (such as the Queen Anne and Georgian styles) in indigenous woods like Sheesham and Mango.",
+        "price": 10000
+      },
+      {
+        "productId": 22,
+        "name": "Chair",
+        "images": [
+          "https://ii1.pepperfry.com/media/catalog/product/m/a/494x544/marshal-high-back-chair-in-black-colour-by-durian-marshal-high-back-chair-in-black-colour-by-durian-tnnnj4.jpg",
+          "https://ii2.pepperfry.com/media/catalog/product/m/a/494x544/marshal-high-back-chair-in-black-colour-by-durian-marshal-high-back-chair-in-black-colour-by-durian-kepv2x.jpg",
+          "https://ii2.pepperfry.com/media/catalog/product/m/a/494x544/marshal-high-back-chair-in-black-colour-by-durian-marshal-high-back-chair-in-black-colour-by-durian-qfsj2r.jpg"
+        ],
+        "description": "Closed loop arms with soft touch leatherette.Nylon painted base with hooded castors.Control designed to support individuals of petite structure and average height.Armrests matching with base and loop shape to get sturdy, comfort and stylish look.",
+        "price": 3500
+      },
+      {
+        "productId": 23,
+        "name": "Almirah",
+        "images": [
+          "https://ii1.pepperfry.com/media/catalog/product/y/u/494x544/yukio-four-door-wardrobe-in-walnut-finish-by-mintwud-yukio-four-door-wardrobe-in-walnut-finish-by-mi-ngbmpv.jpg",
+          "https://ii1.pepperfry.com/media/catalog/product/f/o/494x544/four-door-wardrobe-in-walnut-finish-by-mintwud-four-door-wardrobe-in-walnut-finish-by-mintwud-df19xt.jpg",
+          "https://ii2.pepperfry.com/media/catalog/product/f/o/494x544/four-door-wardrobe-in-walnut-finish-by-mintwud-four-door-wardrobe-in-walnut-finish-by-mintwud-8daxpi.jpg"
+        ],
+        "description": "Mintwud presents a wide showcase of modern furniture thats designed to seamlessly blend with your interiors. Crafted for compact homes, the range is clean and convenient. All the collections have an understated design aesthetic that adapt to any space. The designs represent the ideals of cutting excess, practicality and an absence of decoration.",
+        "price": 12000
+      }
+    ],
+    "3" : [
+      {
+        "productId": 31,
+        "name": "T-shirt",
+        "images": [
+          "https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/productimage/2018/12/14/f08b639a-f038-4416-a97e-47f2f566f6161544778395053-1.jpg",
+          "https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/productimage/2018/12/14/c4ee6b29-256d-4872-a209-581ae8ce46181544778395090-2.jpg"
+        ],
+        "description": "This light grey t-shirt is the season? long sleeves winning design from the house of Tommy Hilfiger. Crafted out of cotton, this one is for the to-be surfer cowboy. It can be paired it with funky beach tracks or t-shirt.",
+        "price": 1500
+      },
+      {
+        "productId": 32,
+        "name": "Shirt",
+        "images": [
+          "https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/9767925/2019/5/31/5acdc310-e547-4a00-afa4-5f0cbbccbfab1559303540889-WROGN-Men-Shirts-701559303539517-1.jpg",
+          "https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/9767925/2019/5/31/1dff0db3-f263-41ef-93db-0371b5dd16831559303540866-WROGN-Men-Shirts-701559303539517-2.jpg",
+          "https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/9767925/2019/5/31/48410d23-0176-4f11-b2ac-508b6ac6326b1559303540820-WROGN-Men-Shirts-701559303539517-4.jpg"
+        ],
+        "description": "Navy Blue & Red checked shirt, has a spread collar, long sleeves and a curved hem",
+        "price": 2000
+      },
+      {
+        "productId": 33,
+        "name": "Jean",
+        "images": [
+          "https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/4451367/2019/5/10/3793a8b7-c859-4dbe-97d3-e41fbf07dc521557463707038-Roadster-Fast-and-Furious-Men-Blue-Slim-Fit-Mid-Rise-Low-Dis-4.jpg",
+          "https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/4451367/2019/5/10/215deb5d-9efe-4baf-b996-4c2147b4c8a01557463707025-Roadster-Fast-and-Furious-Men-Blue-Slim-Fit-Mid-Rise-Low-Dis-5.jpg"
+        ],
+        "description": "Blue medium wash 5-pocket mid-rise jeans, low distress with light fade, has a button and zip closure, waistband with belt loops",
+        "price": 4000
+      }
+    ],
+    "4" : [
+      {
+        "productId": 41,
+        "name": "Travel Backpack",
+        "images": [
+          "https://shop.samsonite.com/dw/image/v2/AAUE_PRD/on/demandware.static/-/Sites-product-catalog/default/dw5f857508/collections/_samsonite/detour/500x500/1234891041_TravelBP.jpg",
+          "https://shop.samsonite.com/dw/image/v2/AAUE_PRD/on/demandware.static/-/Sites-product-catalog/default/dw2639d9c9/collections/_samsonite/detour/500x500/1234891041_TravelBP_Interior.jpg"
+        ],
+        "description": "A strong, all purpose backpack with enough capacity for a business, overnight or weekend trip, the Detour Travel Backpack will hold it all. Built with long-lasting, ultra durable water resistant polyester, your belongings will be protected from the elements. The full zip opening allows for easy packing with loads of capacity.",
+        "price": 3000
+      },
+      {
+        "productId": 42,
+        "name": "Laptop Bag",
+        "images": [
+          "https://rukminim1.flixcart.com/image/880/1056/jmgmmq80/laptop-bag/t/z/g/laptop-bag-and-office-bag-for-men-women-q-lap-br-001-laptop-original-imaf9b3jwxzfcmym.jpeg",
+          "https://rukminim1.flixcart.com/image/880/1056/jmgmmq80/laptop-bag/t/z/g/laptop-bag-and-office-bag-for-men-women-q-lap-br-001-laptop-original-imaf9b3jffgtgaun.jpeg",
+          "https://rukminim1.flixcart.com/image/880/1056/jmgmmq80/laptop-bag/t/z/g/laptop-bag-and-office-bag-for-men-women-q-lap-br-001-laptop-original-imaf9b3jqtgjmgng.jpeg"
+        ],
+        "description": "A strong, all purpose backpack with enough capacity for a business, overnight or weekend trip, the Detour Travel Backpack will hold it all. Built with long-lasting, ultra durable water resistant polyester, your belongings will be protected from the elements. The full zip opening allows for easy packing with loads of capacity.",
+        "price": 1000
+      },
+      {
+        "productId": 43,
+        "name": "Hand Bag",
+        "images": [
+          "https://rukminim1.flixcart.com/image/880/1056/jsaocy80/hand-messenger-bag/d/w/x/3-chain-beige-siri-02-hand-held-bag-sirisha-original-imafdwptte7pmgt2.jpeg",
+          "https://rukminim1.flixcart.com/image/880/1056/jsaocy80/hand-messenger-bag/d/w/x/3-chain-beige-siri-02-hand-held-bag-sirisha-original-imaffgzmghrj4yqb.jpeg"
+        ],
+        "description": "A strong, all purpose backpack with enough capacity for a business, overnight or weekend trip, the Detour Travel Backpack will hold it all. Built with long-lasting, ultra durable water resistant polyester, your belongings will be protected from the elements. The full zip opening allows for easy packing with loads of capacity.",
+        "price": 800
+      }
+    ]
+  }
+}

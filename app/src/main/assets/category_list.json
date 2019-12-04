@@ -1,0 +1,24 @@
+{
+  "categoryList": [
+    {
+      "categoryName": "Electronics",
+      "categoryId": 1,
+      "categoryImage": "https://www.nanotechmag.com/wp-content/uploads/2014/09/original.jpg"
+    },
+    {
+      "categoryName": "Furniture",
+      "categoryId": 2,
+      "categoryImage": "https://ak1.ostkcdn.com/img/mxc/08082018_sptest_Furniture_E1_PopularFurnitureStyles_fix.png?imwidth=1024&impolicy=medium"
+    },
+    {
+      "categoryName": "Clothes",
+      "categoryId": 3,
+      "categoryImage": "https://userscontent2.emaze.com/images/5a4a705d-6de4-4695-a634-9b5929c9504e/234d49a24bbdc13034146843c546ae26.jpg"
+    },
+    {
+      "categoryName": "Bags",
+      "categoryId": 4,
+      "categoryImage": "https://media.gq.com/photos/58d42189e6d6671ac09f3ba9/master/pass/best-luxury-bags-gq-style.jpg"
+    }
+  ]
+}

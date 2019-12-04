@@ -7,7 +7,7 @@ import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.example.cleanarchitecturetryout.R
 import com.example.cleanarchitecturetryout.databinding.CategoryItemBinding
-import com.example.cleanarchitecturetryout.domain.ecommerce.CategoryDetailModel
+import com.example.cleanarchitecturetryout.domain.categorylist.CategoryDetailModel
 import com.example.cleanarchitecturetryout.ui.ItemClickListener
 import com.squareup.picasso.Picasso
 
